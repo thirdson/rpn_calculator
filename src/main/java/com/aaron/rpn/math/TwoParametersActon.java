@@ -17,5 +17,5 @@ public interface TwoParametersActon extends Action {
     context.push(result).pushBackup(num2).pushBackup(num1);
   }
 
-  BigDecimal act2(BigDecimal first, BigDecimal second);
+  BigDecimal act2(BigDecimal first, BigDecimal second) throws MathException;
 }

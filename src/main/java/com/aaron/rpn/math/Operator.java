@@ -68,7 +68,10 @@ public enum Operator {
     return first.multiply(second);
   }
 
-  protected static BigDecimal div(BigDecimal first, BigDecimal second) {
+  protected static BigDecimal div(BigDecimal first, BigDecimal second) throws MathException {
+    if (second.compareTo(BigDecimal.ZERO) == 0) {
+      throw new MathException("try to divided  zero " + first.toString() + " / " + second);
+    }
     return first.divide(second);
   }
 
