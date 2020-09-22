@@ -5,6 +5,9 @@ import com.aaron.rpn.exception.MathException;
 
 import java.math.BigDecimal;
 
+/**
+ * helper adapter of the two parameters action
+ */
 @FunctionalInterface
 public interface TwoParametersActon extends Action {
 

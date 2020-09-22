@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.Map;
 
-/** a very thing wrapper of the math logic */
+/** a very simple wrapper of the math logic */
 public enum Operator {
   PLUS("+", (TwoParametersActon) (first, second) -> plus(first, second)),
   SUB("-", (TwoParametersActon) (first, second) -> sub(first, second)),
