@@ -76,6 +76,12 @@ public enum Operator {
     context.ensureSizeOfNumberInStack(1);
     BigDecimal last = context.pop();
     // 15 decimal places of precision
+
+    // if this is neg?
+    if (last.compareTo(BigDecimal.ZERO) < 0) {
+      throw new MathException("try to sqrt negative number " + last);
+    }
+
     BigDecimal sqrt = new BigDecimal(1);
     sqrt.setScale(PRECISION, RoundingMode.FLOOR);
     // a quick copy
