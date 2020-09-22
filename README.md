@@ -1,3 +1,9 @@
+# how to run it ?
+
+all the gradle way!
+
+enter class **com.aaron.rpn.Application**
+
 # rpn_calculator
 this is airwellex first round test case
 
