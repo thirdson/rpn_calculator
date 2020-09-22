@@ -90,6 +90,18 @@ public enum Operator {
     // a quick copy
     BigDecimal store = last.add(BigDecimal.ZERO);
     boolean first = true;
+
+    // Newton's method just copied from the web side
+
+    //    double Sqr(double a) {
+    //      double x = a, y = 0.0;
+    //      while (fabs(x - y) > 0.00001) {
+    //        y = x;
+    //        x = 0.5*(x + a / x);
+    //      }
+    //      return x;
+    //   }
+
     do {
       if (!first) {
         store = new BigDecimal(sqrt.toString());
